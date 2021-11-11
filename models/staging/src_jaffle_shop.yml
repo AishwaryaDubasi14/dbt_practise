@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: snapshot of database
+    database: RAW
+    tables:
+      - name: customers
+        description: Raw customer data
+        columns: 
+          - name: id
+            description: primary key of customer table
+            tests: 
+              - not_null
+              - unique
+      - name: orders
+        description: Raw orders data
+        columns:
+          - name: id
+            description: primary key of orders table
+            tests: 
+              - not_null
+              - unique
+              
