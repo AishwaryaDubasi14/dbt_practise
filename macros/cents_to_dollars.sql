@@ -2,4 +2,4 @@
 
 round ({{column_name}}/100, {{decimal_places}})
 
-{%- endmacro%}
+{%- endmacro %}
